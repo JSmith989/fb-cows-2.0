@@ -8,7 +8,18 @@ const cowMaker = (cowObject) => {
                           Breed: ${cowObject.breed}<br />
                           Location: ${cowObject.location}<br />
                           Weight: ${cowObject.weight}<br />
-                        </p><a href="#" id="${cowObject.firebaseKey}" class="btn btn-info update-cow"><i class="far fa-edit"></i>update cow</a>
+                        </p>
+                        </div>
+
+                        <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          ${cowObject.farmerName}
+                        </li>
+                          <li class="list-group-item"><a href="mailto:${cowObject.farmerEmail}" target="_blank">Email Farmer</a></li>
+                        </ul>
+                        
+                        <div class="card-body">
+                        <a href="#" id="${cowObject.firebaseKey}" class="btn btn-info update-cow"><i class="far fa-edit"></i>update cow</a>
                         <a href="#" id="${cowObject.firebaseKey}" class="btn btn-danger delete-cow">Delete Cow</a>
                       </div>
                     </div>`;
